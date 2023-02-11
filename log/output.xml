@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.9.1 on win32)" generated="20230129 16:35:04.618" rpa="false" schemaversion="3">
+<suite id="s1" name="Main Tests" source="C:\Users\Michele\PycharmProjects\pythonProject\pythonProject\Playtomic_site_automation\Tests\main_tests.robot">
+<test id="s1-t1" name="Test 1" line="11">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230129 16:35:04.868" endtime="20230129 16:35:04.868"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20230129 16:35:04.868" endtime="20230129 16:35:04.868"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>inizio test 1</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230129 16:35:04.869" level="INFO">inizio test 1</msg>
+<status status="PASS" starttime="20230129 16:35:04.869" endtime="20230129 16:35:04.870"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://playtomic.io/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230129 16:35:04.870" level="INFO">Opening browser 'chrome' to base url 'https://playtomic.io/'.</msg>
+<status status="PASS" starttime="20230129 16:35:04.870" endtime="20230129 16:35:12.544"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Login / registrati</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230129 16:35:12.545" endtime="20230129 16:35:12.667"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div/div[1]/div/div[2]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230129 16:35:12.668" level="INFO">Clicking link 'xpath=//*[@id="root"]/div/div[1]/div/div[2]/a'.</msg>
+<status status="PASS" starttime="20230129 16:35:12.667" endtime="20230129 16:35:13.071"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//*[@id="sign-buttons__sign-in"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230129 16:35:13.072" level="INFO">Clicking link 'xpath=//*[@id="sign-buttons__sign-in"]'.</msg>
+<status status="PASS" starttime="20230129 16:35:13.071" endtime="20230129 16:35:13.579"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="sign-in__email"]</arg>
+<arg>michele.dadamo1@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230129 16:35:13.582" level="INFO">Typing text 'michele.dadamo1@gmail.com' into text field '//*[@id="sign-in__email"]'.</msg>
+<status status="PASS" starttime="20230129 16:35:13.580" endtime="20230129 16:35:14.042"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//*[@id="sign-in__password"]</arg>
+<arg>Playtomicmicmic88**</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230129 16:35:14.043" level="INFO">Typing password into text field '//*[@id="sign-in__password"]'.</msg>
+<msg timestamp="20230129 16:35:14.351" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230129 16:35:14.538" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230129 16:35:14.042" endtime="20230129 16:35:14.538"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="sign-in__submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230129 16:35:14.539" level="INFO">Clicking button '//*[@id="sign-in__submit"]'.</msg>
+<status status="PASS" starttime="20230129 16:35:14.538" endtime="20230129 16:35:15.213"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Michele D'Adamo</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230129 16:35:15.213" endtime="20230129 16:35:15.660"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="search__home__sport"]/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230129 16:35:15.661" level="INFO">Clicking element 'xpath=//*[@id="search__home__sport"]/div[1]'.</msg>
+<status status="PASS" starttime="20230129 16:35:15.660" endtime="20230129 16:35:15.923"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//*[@id="search__home__sport-TENNIS"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230129 16:35:15.924" level="INFO">Clicking link 'xpath=//*[@id="search__home__sport-TENNIS"]'.</msg>
+<status status="PASS" starttime="20230129 16:35:15.923" endtime="20230129 16:35:16.340"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="search__home__date"]/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230129 16:35:16.341" level="INFO">Clicking element '//*[@id="search__home__date"]/div[1]'.</msg>
+<status status="PASS" starttime="20230129 16:35:16.340" endtime="20230129 16:35:16.619"/>
+</kw>
+<kw name="${giorno_calendario} = Get WebElement">
+<arg>//*/form[@id="search__home"]//*/li/a[@class='date-picker__day date-picker__day--disabled' and .='03']</arg>
+<msg timestamp="20230129 16:35:16.622" level="FAIL">No keyword with name '${giorno_calendario} = Get WebElement' found.</msg>
+<status status="FAIL" starttime="20230129 16:35:16.622" endtime="20230129 16:35:16.622"/>
+</kw>
+<kw name="log ${giorno_calendario}">
+<status status="NOT RUN" starttime="20230129 16:35:16.625" endtime="20230129 16:35:16.625"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${giorno_calendario}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230129 16:35:16.625" endtime="20230129 16:35:16.625"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230129 16:35:16.625" endtime="20230129 16:35:16.625"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230129 16:35:16.625" endtime="20230129 16:35:16.625"/>
+</kw>
+<doc>prova</doc>
+<tag>prova</tag>
+<status status="FAIL" starttime="20230129 16:35:04.867" endtime="20230129 16:35:16.625">No keyword with name '${giorno_calendario} = Get WebElement' found.</status>
+</test>
+<doc>gestione della prenotazione partite in automatico da chrome sul sito playtomic</doc>
+<status status="FAIL" starttime="20230129 16:35:04.622" endtime="20230129 16:35:16.626"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">prova</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Main Tests">Main Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
