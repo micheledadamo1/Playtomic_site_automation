@@ -10,7 +10,7 @@ ${log_vari}
 *** Test Cases ***
 Test 1
     [Documentation]     prova
-    [Tags]      prova prova1
+    [Tags]      prova
 
     Set Selenium Speed    .1s
     Set Selenium Timeout    5s
